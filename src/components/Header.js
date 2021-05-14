@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <Nav>
       <Logo src="/images/logo.svg" />
       <NavMenu>
-        <a>
+        <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
           <img src="/images/home-icon.svg" />
           <span>HOME</span>
-        </a>
+        </Link>
         <a>
           <img src="/images/search-icon.svg" />
           <span>SEARCH</span>
